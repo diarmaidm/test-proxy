@@ -1,0 +1,10 @@
+
+---
+applications:
+- name: test-proxy
+  memory: 128M
+  env:
+    NODE_ENV: production
+    TARGET: http://soap-add.cfapps.io/
+  instances: 1
+  command: node app.js
